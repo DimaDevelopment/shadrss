@@ -1,0 +1,74 @@
+import React from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
+import { Badge } from "./ui/badge";
+
+export const WithoutRss: React.FC = () => {
+  return (
+    <Dialog>
+      <DialogTrigger>
+        <Badge className="bg-red-300 text-red-800 font-semibold cursor-pointer">
+          Without RSS feed
+        </Badge>
+      </DialogTrigger>
+      <DialogContent className="max-h-[80vh] overflow-y-auto md:max-w-[60vw] md:w-[60vw] w-full">
+        <DialogHeader>
+          <DialogTitle>No RSS feed found</DialogTitle>
+        </DialogHeader>
+        <div className="mt-4 max-w-full overflow-x-auto">
+          <p>Add a RSS feed to your registry to enable this feature.</p>
+          <pre className="bg-muted p-4 rounded-md mt-3 block max-w-full overflow-x-auto">
+            <code className="text-sm">npm install @wandry/analytics-sdk</code>
+          </pre>
+          <pre className="bg-muted p-4 rounded-md mt-3 block max-w-full overflow-x-auto">
+            <code className="text-sm">
+              {`import { generateRegistryRssFeed } from "@wandry/analytics-sdk";
+import type { NextRequest } from "next/server";
+
+export const revalidate = 3600;
+
+export async function GET(request: NextRequest) {
+  const baseUrl = new URL(request.url).origin;
+
+  const rssXml = await generateRegistryRssFeed({
+    baseUrl,
+    rss: {
+      title: "Wandry UI",
+      description: "Subscribe to Wandry UI updates",
+      link: "https://www.ui.wandry.com.ua",
+      pubDateStrategy: "githubLastEdit",
+    },
+    github: {
+      owner: "WandryDev",
+      repo: "wandry-ui",
+      token: process.env.GITHUB_TOKEN,
+    },
+  });
+
+  if (!rssXml) {
+    return new Response("RSS feed not available", {
+      status: 404,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
+
+  return new Response(rssXml, {
+    headers: {
+      "Content-Type": "application/rss+xml; charset=utf-8",
+      "Cache-Control":
+        "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
+    },
+  });
+}`}
+            </code>
+          </pre>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};

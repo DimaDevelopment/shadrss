@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShadRSS
+
+A directory of RSS feeds from the ShadCN UI community registries. Automatically discovers and tracks RSS feeds from various registry sources, showing the latest updates and activity.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/DimaDevelopment/shadrss.git
+cd shadrss
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+shadrss/
+├── app/                    # Next.js app directory
+│   ├── page.tsx           # Main page
+│   ├── layout.tsx         # Root layout
+│   └── globals.css        # Global styles
+├── components/            # React components
+    ...
+│   └── ui/                    # UI components
+├── lib/                   # Utility functions
+│   ├── config.ts          # Configuration constants
+│   ├── data.ts            # RSS fetching and processing
+│   └── utils.ts           # Helper utilities
+├── types/                 # TypeScript type definitions
+│   └── index.ts           # Type definitions
+└── public/                # Static assets
+```
 
-## Deploy on Vercel
+## RSS Feed Paths
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project automatically tries the following paths to find RSS feeds:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/rss.xml`
+- `/feed.xml`
+- `/rss`
+- `/feed`
+- `/atom.xml`
+- `/atom`
+- `/index.xml`
+- `/index.rss`
+- `/feed.rss`
+- `/rss.rss`
+- `/registry/rss`
+- `/registry/rss.xml`
+- `/registry/feed`
+- `/registry/feed.xml`
+- `/registry/atom`
+- `/registry/atom.xml`
+
+## Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
