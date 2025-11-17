@@ -71,7 +71,9 @@ Once deployed, your RSS feed will be automatically discovered by ShadRSS at one 
 
 **Note**: Make sure your RSS feed is accessible at one of the paths listed in the [RSS Feed Paths](#rss-feed-paths) section above.
 
-### Installation
+---
+
+## Installation
 
 1. Clone the repository:
 
