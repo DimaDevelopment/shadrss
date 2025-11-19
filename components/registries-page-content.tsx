@@ -9,8 +9,6 @@ import { LatestChangesList } from "./latest-changes-list";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
-type ViewType = "registries" | "changes";
-
 type RegistriesPageContentProps = {
   registries: Registry[];
 };

@@ -18,7 +18,7 @@ export default async function Home() {
             ShadRSS
           </h1>
           <p className="mt-2 text-md text-pretty text-muted-foreground">
-            A directory of RSS feeds from the ShadCN UI community registries.
+            A directory of RSS feeds from the shadcn/ui community registries.
           </p>
         </header>
         <RegistriesPageContent registries={registries} />
