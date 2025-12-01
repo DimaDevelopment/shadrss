@@ -122,7 +122,7 @@ async function fetchRssFeed(rssUrl: string): Promise<RssFeed | null> {
 /**
  * Process a single registry's RSS feed
  */
-async function processRegistryRss(registry: RegistryRecord): Promise<{
+export async function processRegistryRss(registry: RegistryRecord): Promise<{
   hasFeed: boolean;
   itemCount: number;
   newItemCount: number;
@@ -198,8 +198,6 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
     .delete(schema.rssItems)
     .where(eq(schema.rssItems.registryId, registry.id));
 
-  const rssItemRecords: (typeof schema.rssItems.$inferInsert)[] = [];
-
   if (items.length > 0) {
     const rssItemValues = items.map((item: RssItem) => ({
       registryId: registry.id,
@@ -211,25 +209,25 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
     }));
 
     await db.insert(schema.rssItems).values(rssItemValues);
-
-    // Keep track of inserted items for webhook notification
-    rssItemRecords.push(
-      ...rssItemValues.map((v) => ({
-        ...v,
-        id: 0, // Placeholder, not needed for webhook
-        createdAt: new Date(),
-      }))
-    );
   }
 
-  // Notify webhooks if there are new items
-  if (newItems.length > 0) {
-    const newItemRecords = rssItemRecords.filter((item) =>
-      newItems.some(
-        (newItem: RssItem) => (newItem.guid || newItem.link || "") === item.guid
-      )
-    );
+  // Build new item records for webhook notification
+  // Use newItems directly since we already know which items are new
+  const newItemRecords: (typeof schema.rssItems.$inferSelect)[] = newItems.map(
+    (item: RssItem) => ({
+      id: 0, // Placeholder, not needed for webhook
+      registryId: registry.id,
+      title: item.title || "",
+      link: item.link || "",
+      guid: item.guid || item.link || "",
+      description: item.description || null,
+      pubDate: new Date(item.pubDate),
+      createdAt: new Date(),
+    })
+  );
 
+  // Notify webhooks if there are new items
+  if (newItems.length > 0 && newItemRecords.length > 0) {
     // Get updated registry data for notification
     const updatedRegistries = await db
       .select()
@@ -237,7 +235,7 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
       .where(eq(schema.registries.id, registry.id));
     const updatedRegistry = updatedRegistries[0];
 
-    if (updatedRegistry && newItemRecords.length > 0) {
+    if (updatedRegistry) {
       try {
         await notifyRegistryUpdate(
           updatedRegistry,

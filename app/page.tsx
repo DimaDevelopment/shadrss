@@ -24,9 +24,9 @@ export default async function Home() {
         <header className="w-full flex flex-col items-center text-center mb-8">
           <div className="flex flex-col items-center gap-2 mb-6">
             <div className="p-3 bg-muted/50 rounded-2xl border border-border/50 shadow-sm mb-2">
-              <AnimateIcon animate loop className="size-8">
-                <Wifi className="rotate-45" />
-              </AnimateIcon>
+              {/* <AnimateIcon animate loop className="size-8"> */}
+              <Wifi className="rotate-45" />
+              {/* </AnimateIcon> */}
             </div>
             <h1 className="text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-pretty">
               shadcn/rss

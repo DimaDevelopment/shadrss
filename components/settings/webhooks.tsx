@@ -237,8 +237,8 @@ export function WebhooksSettings() {
               Create Webhook
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto">
-            <DialogHeader>
+          <DialogContent className="md:max-w-2xl max-h-[85vh] overflow-hidden p-0 gap-0">
+            <DialogHeader className="p-6 pb-4 mb-4 border-b border-border/50">
               <DialogTitle>
                 {editingWebhook ? "Edit Webhook" : "Create Webhook"}
               </DialogTitle>
@@ -248,18 +248,20 @@ export function WebhooksSettings() {
                   : "Add a new webhook URL to receive notifications when registries update."}
               </DialogDescription>
             </DialogHeader>
-            <WebhookForm
-              onSubmit={onSubmit}
-              defaultValues={
-                editingWebhook
-                  ? {
-                      url: editingWebhook.url,
-                      registries: editingWebhook.registries,
-                    }
-                  : undefined
-              }
-              submitLabel={editingWebhook ? "Save Changes" : "Create Webhook"}
-            />
+            <div className="px-6 pb-6 pt-2 max-h-[calc(85vh-8rem)] overflow-y-auto [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-muted-foreground/30">
+              <WebhookForm
+                onSubmit={onSubmit}
+                defaultValues={
+                  editingWebhook
+                    ? {
+                        url: editingWebhook.url,
+                        registries: editingWebhook.registries,
+                      }
+                    : undefined
+                }
+                submitLabel={editingWebhook ? "Save Changes" : "Create Webhook"}
+              />
+            </div>
           </DialogContent>
         </Dialog>
       </div>

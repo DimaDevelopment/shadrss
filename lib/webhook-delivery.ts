@@ -299,6 +299,107 @@ export async function notifyRegistryUpdate(
 }
 
 /**
+ * Type for registry update with items
+ */
+export type RegistryUpdateWithItems = {
+  registry: RegistryRecord;
+  newItems?: RssItemRecord[];
+};
+
+/**
+ * Notify webhooks about multiple registry updates in a single webhook call
+ * This batches all changed registries into one webhook payload per webhook
+ */
+export async function notifyMultipleRegistryUpdates(
+  updates: RegistryUpdateWithItems[]
+): Promise<DeliveryResult[]> {
+  if (updates.length === 0) {
+    return [];
+  }
+
+  // Get all unique registry IDs
+  const registryIds = [...new Set(updates.map((u) => u.registry.id))];
+
+  // Get all webhooks that subscribe to any of these registries
+  const allWebhooks = await Promise.all(
+    registryIds.map((id) => getWebhooksForRegistry(id))
+  );
+
+  // Flatten and deduplicate webhooks
+  const webhookMap = new Map<string, typeof schema.webhooks.$inferSelect>();
+  for (const webhooks of allWebhooks) {
+    for (const webhook of webhooks) {
+      webhookMap.set(webhook.id, webhook);
+    }
+  }
+
+  const webhooks = Array.from(webhookMap.values());
+
+  if (webhooks.length === 0) {
+    return [];
+  }
+
+  // Determine event type - use items_added if any update has items
+  const hasItems = updates.some((u) => u.newItems && u.newItems.length > 0);
+  const eventType: WebhookEventType = hasItems
+    ? "registry.items_added"
+    : "registry.updated";
+
+  // Build payload with all registries
+  const payload: WebhookPayload = {
+    event: eventType,
+    timestamp: new Date().toISOString(),
+    data: {
+      registries: updates.map((update) => ({
+        registry: {
+          id: update.registry.id,
+          name: update.registry.name,
+          url: update.registry.url,
+          homepage: update.registry.homepage,
+        },
+        ...(update.newItems?.length && {
+          items: update.newItems.map((item) => ({
+            title: item.title,
+            link: item.link,
+            pubDate: item.pubDate.toISOString(),
+            description: item.description || undefined,
+          })),
+        }),
+      })),
+    },
+  };
+
+  // Deliver to all webhooks in parallel
+  // Only send to webhooks that subscribe to at least one of the updated registries
+  const results = await Promise.all(
+    webhooks.map(async (webhook) => {
+      // Check if this webhook subscribes to any of the updated registries
+      const webhookRegistries = await db
+        .select()
+        .from(schema.webhookRegistries)
+        .where(eq(schema.webhookRegistries.webhookId, webhook.id));
+
+      const subscribedIds = new Set(webhookRegistries.map((r) => r.registryId));
+      const hasSubscribedRegistry = updates.some((u) =>
+        subscribedIds.has(u.registry.id)
+      );
+
+      if (!hasSubscribedRegistry) {
+        return {
+          webhookId: webhook.id,
+          success: false,
+          errorMessage: "Webhook not subscribed to any updated registries",
+        };
+      }
+
+      return deliverWebhook(webhook, payload);
+    })
+  );
+
+  return results;
+}
+
+/**
  * Process pending retries
  */
 export async function processRetries(): Promise<{

@@ -113,7 +113,7 @@ export function WebhookForm({
                   <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
                 </div>
               ) : (
-                <div className="max-h-[300px] overflow-y-auto rounded-md border p-4">
+                <div className="max-h-[300px] overflow-y-auto rounded-md border p-4 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-muted-foreground/30">
                   <div className="grid grid-cols-2 gap-4">
                     {availableRegistries.map((registry) => (
                       <FormField
