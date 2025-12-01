@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Loader2, Link as LinkIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,13 +17,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { getRegistries, type RegistryOption } from "@/lib/api/registries";
 
-// Mock available registries - in a real app, this would come from the backend
-export const AVAILABLE_REGISTRIES = [
-  { id: "shadcn", name: "shadcn/ui" },
-  { id: "animate-ui", name: "Animate UI" },
-  { id: "acme", name: "Acme Corp" },
-];
+export type { RegistryOption };
 
 const webhookFormSchema = z.object({
   url: z.string().url({ message: "Please enter a valid URL" }),
@@ -44,6 +41,11 @@ export function WebhookForm({
   onSubmit,
   submitLabel = "Create Webhook",
 }: WebhookFormProps) {
+  const [availableRegistries, setAvailableRegistries] = useState<
+    RegistryOption[]
+  >([]);
+  const [isLoadingRegistries, setIsLoadingRegistries] = useState(true);
+
   const form = useForm<WebhookFormValues>({
     resolver: zodResolver(webhookFormSchema),
     defaultValues: {
@@ -52,6 +54,22 @@ export function WebhookForm({
       ...defaultValues,
     },
   });
+
+  useEffect(() => {
+    async function loadRegistries() {
+      try {
+        setIsLoadingRegistries(true);
+        const registries = await getRegistries();
+        setAvailableRegistries(registries);
+      } catch (error) {
+        console.error("Failed to load registries:", error);
+      } finally {
+        setIsLoadingRegistries(false);
+      }
+    }
+
+    loadRegistries();
+  }, []);
 
   return (
     <Form {...form}>
@@ -90,44 +108,52 @@ export function WebhookForm({
                   Select the registries you want to receive updates from.
                 </FormDescription>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                {AVAILABLE_REGISTRIES.map((registry) => (
-                  <FormField
-                    key={registry.id}
-                    control={form.control}
-                    name="registries"
-                    render={({ field }) => {
-                      return (
-                        <FormItem
-                          key={registry.id}
-                          className="flex flex-row items-start space-x-3 space-y-0"
-                        >
-                          <FormControl>
-                            <Checkbox
-                              checked={field.value?.includes(registry.id)}
-                              onCheckedChange={(checked) => {
-                                return checked
-                                  ? field.onChange([
-                                      ...(field.value || []),
-                                      registry.id,
-                                    ])
-                                  : field.onChange(
-                                      (field.value || []).filter(
-                                        (value) => value !== registry.id
-                                      )
-                                    );
-                              }}
-                            />
-                          </FormControl>
-                          <FormLabel className="font-normal cursor-pointer">
-                            {registry.name}
-                          </FormLabel>
-                        </FormItem>
-                      );
-                    }}
-                  />
-                ))}
-              </div>
+              {isLoadingRegistries ? (
+                <div className="flex items-center justify-center py-4">
+                  <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+                </div>
+              ) : (
+                <div className="max-h-[300px] overflow-y-auto rounded-md border p-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    {availableRegistries.map((registry) => (
+                      <FormField
+                        key={registry.id}
+                        control={form.control}
+                        name="registries"
+                        render={({ field }) => {
+                          return (
+                            <FormItem
+                              key={registry.id}
+                              className="flex flex-row items-start space-x-3 space-y-0"
+                            >
+                              <FormControl>
+                                <Checkbox
+                                  checked={field.value?.includes(registry.name)}
+                                  onCheckedChange={(checked) => {
+                                    return checked
+                                      ? field.onChange([
+                                          ...(field.value || []),
+                                          registry.name,
+                                        ])
+                                      : field.onChange(
+                                          (field.value || []).filter(
+                                            (value) => value !== registry.name
+                                          )
+                                        );
+                                  }}
+                                />
+                              </FormControl>
+                              <FormLabel className="font-normal cursor-pointer">
+                                {registry.name}
+                              </FormLabel>
+                            </FormItem>
+                          );
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
               <FormMessage />
             </FormItem>
           )}

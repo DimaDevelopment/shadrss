@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Plus, Globe } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Plus, Globe, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -15,69 +15,204 @@ import {
 import { toast } from "sonner";
 import { WebhookForm, WebhookFormValues } from "./webhook-form";
 import { WebhookCard, Webhook } from "./webhook-card";
-
-// Mock data - in a real app, this would come from the backend
-const MOCK_WEBHOOKS: Webhook[] = [
-  {
-    id: "1",
-    url: "https://api.example.com/webhooks/registry-updates",
-    registries: ["shadcn", "animate-ui"],
-    isActive: true,
-    lastTriggered: "2 minutes ago",
-    status: "healthy",
-  },
-  {
-    id: "2",
-    url: "https://internal.app/api/sync",
-    registries: ["shadcn"],
-    isActive: false,
-    status: "pending",
-  },
-];
+import {
+  getWebhooks,
+  createWebhook,
+  updateWebhook,
+  deleteWebhook,
+  pauseWebhook,
+  resumeWebhook,
+  type WebhookResponse,
+} from "@/lib/api/webhooks";
+import { getRegistries, type RegistryOption } from "@/lib/api/registries";
+import { formatDistanceToNow } from "date-fns";
 
 export function WebhooksSettings() {
-  const [webhooks, setWebhooks] = useState<Webhook[]>(MOCK_WEBHOOKS);
+  const [webhooks, setWebhooks] = useState<Webhook[]>([]);
   const [isCreateOpen, setIsCreateOpen] = useState(false);
   const [editingWebhook, setEditingWebhook] = useState<Webhook | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [registryMap, setRegistryMap] = useState<Map<number, string>>(
+    new Map()
+  );
 
-  const toggleWebhook = (id: string) => {
-    setWebhooks(
-      webhooks.map((w) => (w.id === id ? { ...w, isActive: !w.isActive } : w))
-    );
-    toast.success("Webhook status updated");
+  // Fetch registries and webhooks on mount
+  useEffect(() => {
+    async function loadData() {
+      try {
+        setIsLoading(true);
+        const [webhooksData, registriesData] = await Promise.all([
+          getWebhooks(),
+          getRegistries(),
+        ]);
+
+        // Create a map of registry ID to name
+        const map = new Map<number, string>();
+        registriesData.forEach((reg) => {
+          map.set(reg.id, reg.name);
+        });
+        setRegistryMap(map);
+
+        // Transform webhooks from backend format to frontend format
+        const transformedWebhooks: Webhook[] = webhooksData.map((w) => ({
+          id: w.id,
+          url: w.url,
+          registries: w.registries.map((id) => map.get(id) || `Registry ${id}`),
+          isActive: w.isActive,
+          lastTriggered: w.lastTriggeredAt
+            ? formatDistanceToNow(new Date(w.lastTriggeredAt), {
+                addSuffix: true,
+              })
+            : undefined,
+          status: w.status,
+        }));
+
+        setWebhooks(transformedWebhooks);
+      } catch (error) {
+        console.error("Failed to load webhooks:", error);
+        toast.error(
+          error instanceof Error
+            ? error.message
+            : "Failed to load webhooks. Please try again."
+        );
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    loadData();
+  }, []);
+
+  const handleToggleWebhook = async (id: string) => {
+    const webhook = webhooks.find((w) => w.id === id);
+    if (!webhook) return;
+
+    try {
+      if (webhook.isActive) {
+        await pauseWebhook(id);
+        toast.success("Webhook paused");
+      } else {
+        await resumeWebhook(id);
+        toast.success("Webhook resumed");
+      }
+
+      // Refresh webhooks
+      const webhooksData = await getWebhooks();
+      const transformedWebhooks: Webhook[] = webhooksData.map((w) => ({
+        id: w.id,
+        url: w.url,
+        registries: w.registries.map(
+          (regId) => registryMap.get(regId) || `Registry ${regId}`
+        ),
+        isActive: w.isActive,
+        lastTriggered: w.lastTriggeredAt
+          ? formatDistanceToNow(new Date(w.lastTriggeredAt), {
+              addSuffix: true,
+            })
+          : undefined,
+        status: w.status,
+      }));
+      setWebhooks(transformedWebhooks);
+    } catch (error) {
+      console.error("Failed to toggle webhook:", error);
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : "Failed to update webhook status. Please try again."
+      );
+    }
   };
 
-  const deleteWebhook = (id: string) => {
-    setWebhooks(webhooks.filter((w) => w.id !== id));
-    toast.success("Webhook deleted");
+  const handleDeleteWebhook = async (id: string) => {
+    try {
+      await deleteWebhook(id);
+      setWebhooks(webhooks.filter((w) => w.id !== id));
+      toast.success("Webhook deleted");
+    } catch (error) {
+      console.error("Failed to delete webhook:", error);
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : "Failed to delete webhook. Please try again."
+      );
+    }
   };
 
   const onSubmit = async (data: WebhookFormValues) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      // Convert registry names to IDs
+      const registriesData = await getRegistries();
+      const nameToIdMap = new Map<string, number>();
+      registriesData.forEach((reg) => {
+        nameToIdMap.set(reg.name, reg.id);
+      });
 
-    if (editingWebhook) {
-      setWebhooks(
-        webhooks.map((w) =>
-          w.id === editingWebhook.id
-            ? { ...w, url: data.url, registries: data.registries }
-            : w
-        )
-      );
+      const registryIds = data.registries
+        .map((name) => nameToIdMap.get(name))
+        .filter((id): id is number => id !== undefined);
+
+      if (editingWebhook) {
+        await updateWebhook(editingWebhook.id, {
+          url: data.url,
+          registryIds,
+        });
+
+        toast.success("Webhook updated successfully");
+
+        // Refresh webhooks
+        const webhooksData = await getWebhooks();
+        const transformedWebhooks: Webhook[] = webhooksData.map((w) => ({
+          id: w.id,
+          url: w.url,
+          registries: w.registries.map(
+            (regId) => registryMap.get(regId) || `Registry ${regId}`
+          ),
+          isActive: w.isActive,
+          lastTriggered: w.lastTriggeredAt
+            ? formatDistanceToNow(new Date(w.lastTriggeredAt), {
+                addSuffix: true,
+              })
+            : undefined,
+          status: w.status,
+        }));
+        setWebhooks(transformedWebhooks);
+      } else {
+        await createWebhook({
+          url: data.url,
+          registryIds,
+        });
+
+        toast.success("Webhook created successfully");
+
+        // Refresh webhooks
+        const webhooksData = await getWebhooks();
+        const transformedWebhooks: Webhook[] = webhooksData.map((w) => ({
+          id: w.id,
+          url: w.url,
+          registries: w.registries.map(
+            (regId) => registryMap.get(regId) || `Registry ${regId}`
+          ),
+          isActive: w.isActive,
+          lastTriggered: w.lastTriggeredAt
+            ? formatDistanceToNow(new Date(w.lastTriggeredAt), {
+                addSuffix: true,
+              })
+            : undefined,
+          status: w.status,
+        }));
+        setWebhooks(transformedWebhooks);
+      }
+
+      setIsCreateOpen(false);
       setEditingWebhook(null);
-      toast.success("Webhook updated successfully");
-    } else {
-      const newWebhook: Webhook = {
-        id: Math.random().toString(36).substr(2, 9),
-        url: data.url,
-        registries: data.registries,
-        isActive: true,
-        status: "pending",
-      };
-      setWebhooks([...webhooks, newWebhook]);
-      toast.success("Webhook created successfully");
+    } catch (error) {
+      console.error("Failed to save webhook:", error);
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : "Failed to save webhook. Please try again."
+      );
     }
-    setIsCreateOpen(false);
   };
 
   return (
@@ -102,7 +237,7 @@ export function WebhooksSettings() {
               Create Webhook
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-[500px]">
+          <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle>
                 {editingWebhook ? "Edit Webhook" : "Create Webhook"}
@@ -129,7 +264,16 @@ export function WebhooksSettings() {
         </Dialog>
       </div>
       <div className="grid gap-4">
-        {webhooks.length === 0 ? (
+        {isLoading ? (
+          <Card className="border-dashed">
+            <CardContent className="flex flex-col items-center justify-center py-10 text-center">
+              <Loader2 className="h-6 w-6 animate-spin text-muted-foreground mb-4" />
+              <p className="text-sm text-muted-foreground">
+                Loading webhooks...
+              </p>
+            </CardContent>
+          </Card>
+        ) : webhooks.length === 0 ? (
           <Card className="border-dashed">
             <CardContent className="flex flex-col items-center justify-center py-10 text-center">
               <div className="rounded-full bg-muted p-3 mb-4">
@@ -151,8 +295,8 @@ export function WebhooksSettings() {
             <WebhookCard
               key={webhook.id}
               webhook={webhook}
-              onToggle={toggleWebhook}
-              onDelete={deleteWebhook}
+              onToggle={handleToggleWebhook}
+              onDelete={handleDeleteWebhook}
               onEdit={(webhook) => {
                 setEditingWebhook(webhook);
                 setIsCreateOpen(true);

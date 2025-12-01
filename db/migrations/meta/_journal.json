@@ -43,6 +43,13 @@
       "when": 1764448000000,
       "tag": "0005_add_verification",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1764450013701,
+      "tag": "0006_sleepy_sentinel",
+      "breakpoints": true
     }
   ]
 }

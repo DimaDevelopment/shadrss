@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Clock,
   Globe,
@@ -8,12 +9,13 @@ import {
   Trash2,
   Edit2,
   Activity,
+  Loader2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
-import { AVAILABLE_REGISTRIES } from "./webhook-form";
+import { testWebhook } from "@/lib/api/webhooks";
 
 export type Webhook = {
   id: string;
@@ -47,9 +49,6 @@ interface WebhookRegistriesProps {
 }
 
 function WebhookRegistries({ registries }: WebhookRegistriesProps) {
-  const getRegistryName = (id: string) =>
-    AVAILABLE_REGISTRIES.find((r) => r.id === id)?.name || id;
-
   return (
     <div className="flex flex-wrap gap-1.5 p-3 bg-muted/30 rounded-md border border-border/50">
       <span className="text-xs font-medium text-muted-foreground mr-1 self-center">
@@ -61,7 +60,7 @@ function WebhookRegistries({ registries }: WebhookRegistriesProps) {
           variant="secondary"
           className="text-[10px] font-normal bg-background border border-border/50 hover:bg-background shadow-none px-2"
         >
-          {getRegistryName(reg)}
+          {reg}
         </Badge>
       ))}
     </div>
@@ -81,16 +80,46 @@ function WebhookActions({
   onDelete,
   onEdit,
 }: WebhookActionsProps) {
+  const [isTesting, setIsTesting] = useState(false);
+
+  const handleTest = async () => {
+    try {
+      setIsTesting(true);
+      const result = await testWebhook(webhook.id);
+      if (result.success) {
+        toast.success(result.message || "Test webhook delivered successfully");
+      } else {
+        toast.error(result.message || "Test webhook delivery failed", {
+          description: result.error,
+        });
+      }
+    } catch (error) {
+      console.error("Failed to test webhook:", error);
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : "Failed to test webhook. Please try again."
+      );
+    } finally {
+      setIsTesting(false);
+    }
+  };
+
   return (
     <div className="flex items-center justify-end gap-1">
       <Button
         variant="ghost"
         size="sm"
         className="h-7 px-2 text-muted-foreground hover:text-foreground"
-        onClick={() => toast.success("Test event sent!")}
+        onClick={handleTest}
+        disabled={isTesting}
         title="Test Webhook"
       >
-        <Activity className="h-3.5 w-3.5 mr-1.5" />
+        {isTesting ? (
+          <Loader2 className="h-3.5 w-3.5 mr-1.5 animate-spin" />
+        ) : (
+          <Activity className="h-3.5 w-3.5 mr-1.5" />
+        )}
         <span className="text-xs">Test</span>
       </Button>
       <Button

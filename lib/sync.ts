@@ -3,6 +3,7 @@ import { and, eq } from "drizzle-orm";
 import { db, schema } from "@/db";
 import { RssFeed, RssItem } from "@/types";
 import { REGISTRIES_URL, RSS_URLS } from "./config";
+import { notifyRegistryUpdate } from "./webhook-delivery";
 
 const CONCURRENCY = 10;
 const DISCOVERY_TIMEOUT = 2000;
@@ -124,9 +125,10 @@ async function fetchRssFeed(rssUrl: string): Promise<RssFeed | null> {
 async function processRegistryRss(registry: RegistryRecord): Promise<{
   hasFeed: boolean;
   itemCount: number;
+  newItemCount: number;
 }> {
   const baseUrl = registry.homepage || registry.url;
-  if (!baseUrl) return { hasFeed: false, itemCount: 0 };
+  if (!baseUrl) return { hasFeed: false, itemCount: 0, newItemCount: 0 };
 
   // Use existing RSS URL or discover new one
   const rssUrl = registry.rssUrl ?? (await discoverRssUrl(baseUrl));
@@ -136,7 +138,7 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
       .update(schema.registries)
       .set({ hasFeed: false, rssUrl: null, fetchedAt: new Date() })
       .where(eq(schema.registries.id, registry.id));
-    return { hasFeed: false, itemCount: 0 };
+    return { hasFeed: false, itemCount: 0, newItemCount: 0 };
   }
 
   const feed = await fetchRssFeed(rssUrl);
@@ -146,7 +148,7 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
       .update(schema.registries)
       .set({ hasFeed: false, rssUrl: null, fetchedAt: new Date() })
       .where(eq(schema.registries.id, registry.id));
-    return { hasFeed: false, itemCount: 0 };
+    return { hasFeed: false, itemCount: 0, newItemCount: 0 };
   }
 
   const channel = feed.rss.channel;
@@ -164,6 +166,18 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
           )
         )
       : null;
+
+  // Get existing item GUIDs to detect new items
+  const existingItems = await db
+    .select()
+    .from(schema.rssItems)
+    .where(eq(schema.rssItems.registryId, registry.id));
+  const existingGuids = new Set(existingItems.map((i) => i.guid));
+
+  // Find new items
+  const newItems = items.filter(
+    (item: RssItem) => !existingGuids.has(item.guid || item.link || "")
+  );
 
   // Update registry
   await db
@@ -184,6 +198,8 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
     .delete(schema.rssItems)
     .where(eq(schema.rssItems.registryId, registry.id));
 
+  const rssItemRecords: (typeof schema.rssItems.$inferInsert)[] = [];
+
   if (items.length > 0) {
     const rssItemValues = items.map((item: RssItem) => ({
       registryId: registry.id,
@@ -195,9 +211,52 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
     }));
 
     await db.insert(schema.rssItems).values(rssItemValues);
+
+    // Keep track of inserted items for webhook notification
+    rssItemRecords.push(
+      ...rssItemValues.map((v) => ({
+        ...v,
+        id: 0, // Placeholder, not needed for webhook
+        createdAt: new Date(),
+      }))
+    );
   }
 
-  return { hasFeed: true, itemCount: items.length };
+  // Notify webhooks if there are new items
+  if (newItems.length > 0) {
+    const newItemRecords = rssItemRecords.filter((item) =>
+      newItems.some(
+        (newItem: RssItem) => (newItem.guid || newItem.link || "") === item.guid
+      )
+    );
+
+    // Get updated registry data for notification
+    const updatedRegistries = await db
+      .select()
+      .from(schema.registries)
+      .where(eq(schema.registries.id, registry.id));
+    const updatedRegistry = updatedRegistries[0];
+
+    if (updatedRegistry && newItemRecords.length > 0) {
+      try {
+        await notifyRegistryUpdate(
+          updatedRegistry,
+          newItemRecords as (typeof schema.rssItems.$inferSelect)[]
+        );
+      } catch (error) {
+        console.error(
+          `Failed to notify webhooks for registry ${registry.name}:`,
+          error
+        );
+      }
+    }
+  }
+
+  return {
+    hasFeed: true,
+    itemCount: items.length,
+    newItemCount: newItems.length,
+  };
 }
 
 /**
@@ -226,6 +285,7 @@ export async function syncRssFeeds(): Promise<{
   processed: number;
   withFeeds: number;
   itemsSynced: number;
+  newItems: number;
   errors: number;
 }> {
   const registries = await db
@@ -235,6 +295,7 @@ export async function syncRssFeeds(): Promise<{
 
   let withFeeds = 0;
   let itemsSynced = 0;
+  let newItems = 0;
   let errors = 0;
 
   const results = await processInBatches(
@@ -244,7 +305,7 @@ export async function syncRssFeeds(): Promise<{
         return await processRegistryRss(registry);
       } catch (error) {
         console.error(`Failed to sync RSS for ${registry.name}:`, error);
-        return { hasFeed: false, itemCount: 0, error: true };
+        return { hasFeed: false, itemCount: 0, newItemCount: 0, error: true };
       }
     },
     CONCURRENCY
@@ -256,6 +317,7 @@ export async function syncRssFeeds(): Promise<{
     } else if (result.hasFeed) {
       withFeeds++;
       itemsSynced += result.itemCount;
+      newItems += result.newItemCount;
     }
   }
 
@@ -263,6 +325,7 @@ export async function syncRssFeeds(): Promise<{
     processed: registries.length,
     withFeeds,
     itemsSynced,
+    newItems,
     errors,
   };
 }
