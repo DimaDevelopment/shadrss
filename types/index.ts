@@ -1,3 +1,4 @@
+//
 export type Registry = {
   name: string;
   homepage: string;
