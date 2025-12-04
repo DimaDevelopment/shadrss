@@ -16,7 +16,6 @@ export function usePinnedRegistries() {
   const loadPins = async () => {
     setIsLoading(true);
     const pins = await getPins();
-    console.log("loaded pins", pins);
     setPins(pins);
     setIsLoading(false);
   };
