@@ -1,0 +1,98 @@
+{
+  "map-with-custom-markers": {
+    "lastPublished": "2025-09-25T21:09:22.000Z",
+    "type": "registry:example"
+  },
+  "map-with-markers": {
+    "lastPublished": "2025-09-24T03:29:54.000Z",
+    "type": "registry:example"
+  },
+  "basic-map": {
+    "lastPublished": "2025-09-23T04:27:37.000Z",
+    "type": "registry:example"
+  },
+  "map-with-custom-tiles": {
+    "lastPublished": "2025-09-26T22:13:58.000Z",
+    "type": "registry:example"
+  },
+  "map": {
+    "lastPublished": "2025-12-01T15:41:05.000Z",
+    "type": "registry:ui"
+  },
+  "map-with-circle": {
+    "lastPublished": "2025-09-23T15:58:09.000Z",
+    "type": "registry:example"
+  },
+  "map-with-circle-marker": {
+    "lastPublished": "2025-09-23T15:58:09.000Z",
+    "type": "registry:example"
+  },
+  "map-with-polyline": {
+    "lastPublished": "2025-09-23T15:58:09.000Z",
+    "type": "registry:example"
+  },
+  "map-with-polygon": {
+    "lastPublished": "2025-09-23T15:58:09.000Z",
+    "type": "registry:example"
+  },
+  "map-with-rectangle": {
+    "lastPublished": "2025-09-23T15:58:09.000Z",
+    "type": "registry:example"
+  },
+  "map-with-styled-shapes": {
+    "lastPublished": "2025-09-24T17:37:28.000Z",
+    "type": "registry:example"
+  },
+  "map-with-popups-and-tooltips": {
+    "lastPublished": "2025-11-10T14:12:28.000Z",
+    "type": "registry:example"
+  },
+  "map-with-zoom-control": {
+    "lastPublished": "2025-09-23T04:52:12.000Z",
+    "type": "registry:example"
+  },
+  "map-with-layers-control": {
+    "lastPublished": "2025-09-26T14:48:39.000Z",
+    "type": "registry:example"
+  },
+  "map-with-feature-groups-control": {
+    "lastPublished": "2025-10-01T15:12:37.000Z",
+    "type": "registry:example"
+  },
+  "map-with-tile-layers-control": {
+    "lastPublished": "2025-09-26T14:48:39.000Z",
+    "type": "registry:example"
+  },
+  "map-with-layer-groups-control": {
+    "lastPublished": "2025-10-01T15:12:37.000Z",
+    "type": "registry:example"
+  },
+  "map-with-locate-control": {
+    "lastPublished": "2025-09-24T05:16:54.000Z",
+    "type": "registry:example"
+  },
+  "map-with-custom-control-position": {
+    "lastPublished": "2025-09-26T18:54:05.000Z",
+    "type": "registry:example"
+  },
+  "map-with-locate-control-callbacks": {
+    "lastPublished": "2025-09-24T15:30:10.000Z",
+    "type": "registry:example"
+  },
+  "map-with-draw-control": {
+    "lastPublished": "2025-10-04T06:01:50.000Z",
+    "type": "registry:example"
+  },
+  "map-with-complex-custom-control-position": {
+    "lastPublished": "2025-10-04T06:01:50.000Z",
+    "type": "registry:example"
+  },
+  "map-with-draw-control-callback": {
+    "lastPublished": "2025-10-04T06:01:50.000Z",
+    "type": "registry:example"
+  },
+  "map-with-draw-control-specific-shapes": {
+    "lastPublished": "2025-10-01T15:25:05.000Z",
+    "type": "registry:example"
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "alert-3": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "alert-2": {
+    "lastPublished": "2025-11-19T19:35:24.000Z",
+    "type": "registry:component"
+  },
+  "alert-1": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "animated-SVG-chart": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "alert-4": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "animated-testimonials": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "autosize-textarea-max-height": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "autosize-textarea-ref": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "autosize-textarea-dependecies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "autosize-textarea-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "autosize-textarea-form": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "autosize-textarea-customize": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-hour-cycle": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-year-range": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-and-time-input": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-locale": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-display-format": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-calendar-settings": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-placeholder": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-disabled": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-granularity": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-ref": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "dual-range-slider-dependecies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "datetime-picker-form": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "dual-range-slider-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "dual-range-slider-label-position": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "dual-range-slider-custom-label": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "dual-range-slider-single": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "event-calendar": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "feedback-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "event-badge-3d": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "floating-label-input": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "floating-label-form": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "floating-label-input-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "floating-label-customize": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "footers-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "animated-wave-footer": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "stackedcircular-footer": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "http-status-code": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "floatingparticle-footer": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "footer": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "image-preview": {
+    "lastPublished": "2025-05-31T07:11:35.000Z",
+    "type": "registry:component"
+  },
+  "infinite-scroll-dependecies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "loading-button-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "infinite-scroll-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "loading-button-dependencies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "loading-button-as-child": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "loading-button-usage": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-dependencies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "inline-code": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "input-model": {
+    "lastPublished": "2025-07-13T13:31:46.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-disable-options": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-no-default-select": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-disabled": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-controlled": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-hide-clear-all": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-creatable": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-async-search": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-async-search-and-onfocus": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-async-search-and-creatable": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "heading-with-anchor": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-async-search-and-creatable-and-group": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-sync-search": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-group": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "use-toast": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-max-selected": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-max-text-length": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-manually-controlled": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-no-placeholder-when-selected": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-fixed-option": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-ref": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-commandprops": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-selector-with-form": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "multiple-step-form-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "navbar-demo": {
+    "lastPublished": "2025-05-31T07:11:35.000Z",
+    "type": "registry:component"
+  },
+  "tab-navbar": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "circular-navbar": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "floating-navbar": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "sidebar-navbar": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "login-card": {
+    "lastPublished": "2025-07-02T12:11:54.000Z",
+    "type": "registry:component"
+  },
+  "kanbanboard": {
+    "lastPublished": "2025-07-26T10:27:27.000Z",
+    "type": "registry:component"
+  },
+  "product-card": {
+    "lastPublished": "2025-07-21T06:30:44.000Z",
+    "type": "registry:component"
+  },
+  "profile-dropdown": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "progress-with-value-dependencies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "progress-with-value": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "value-position": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "custom-label": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "responsive-modal-dependencies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "responsive-modal": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "responsive-modal-side": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "skeleton-card": {
+    "lastPublished": "2025-05-31T07:11:35.000Z",
+    "type": "registry:component"
+  },
+  "spinner-dependencies": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "spinner-demo": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "spinner-size": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "skeleton": {
+    "lastPublished": "2025-05-31T07:11:35.000Z",
+    "type": "registry:component"
+  },
+  "spinner-with-text": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "status-badge": {
+    "lastPublished": "2025-11-18T19:44:27.000Z",
+    "type": "registry:component"
+  },
+  "testimonials": {
+    "lastPublished": "2025-08-06T06:30:03.000Z",
+    "type": "registry:component"
+  },
+  "holographic": {
+    "lastPublished": "2025-08-11T07:20:26.000Z",
+    "type": "registry:component"
+  },
+  "ink": {
+    "lastPublished": "2025-08-11T07:20:26.000Z",
+    "type": "registry:component"
+  },
+  "animated-drawer": {
+    "lastPublished": "2025-11-18T19:44:27.000Z",
+    "type": "registry:component"
+  },
+  "spinner-toggle": {
+    "lastPublished": "2025-06-22T09:56:59.000Z",
+    "type": "registry:component"
+  },
+  "orbital-letters": {
+    "lastPublished": "2025-08-11T07:20:26.000Z",
+    "type": "registry:component"
+  }
+}

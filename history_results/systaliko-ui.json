@@ -1,0 +1,446 @@
+{
+  "calculator": {
+    "lastPublished": "2025-09-02T17:22:02.000Z",
+    "type": "registry:block"
+  },
+  "grid-bento": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "animated-menu": {
+    "lastPublished": "2025-11-10T15:40:38.000Z",
+    "type": "registry:block"
+  },
+  "header": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "container-stagger": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "image-player": {
+    "lastPublished": "2025-09-23T19:38:14.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-rotate": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:block"
+  },
+  "parallax": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "scroll-x-carousel": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "scroll-autoplay": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "slideshow": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:block"
+  },
+  "story": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "wavy-block": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:block"
+  },
+  "card": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "timeline": {
+    "lastPublished": "2025-11-09T00:38:15.000Z",
+    "type": "registry:block"
+  },
+  "card-flip": {
+    "lastPublished": "2025-06-04T21:47:53.000Z",
+    "type": "registry:ui"
+  },
+  "card-curtain-reveal": {
+    "lastPublished": "2025-06-04T21:47:53.000Z",
+    "type": "registry:ui"
+  },
+  "card-hover-reveal": {
+    "lastPublished": "2025-06-04T21:47:53.000Z",
+    "type": "registry:ui"
+  },
+  "card-testimonial": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "custom-cursor": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "cards-stack": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "cards-stack-rotated": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "pulse": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:ui"
+  },
+  "rating-stars": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "animated-menu-demo": {
+    "lastPublished": "2025-11-10T15:40:38.000Z",
+    "type": "registry:block"
+  },
+  "animated-menu-full-screen-demo": {
+    "lastPublished": "2025-11-10T15:40:38.000Z",
+    "type": "registry:block"
+  },
+  "animated-menu-2-demo": {
+    "lastPublished": "2025-11-10T15:40:38.000Z",
+    "type": "registry:block"
+  },
+  "calculator-demo": {
+    "lastPublished": "2025-09-02T17:22:02.000Z",
+    "type": "registry:block"
+  },
+  "container-stagger-demo": {
+    "lastPublished": "2025-09-23T18:49:25.000Z",
+    "type": "registry:block"
+  },
+  "container-stagger-2-demo": {
+    "lastPublished": "2025-09-23T18:49:25.000Z",
+    "type": "registry:block"
+  },
+  "grid-bento-four-cells-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "grid-bento-three-cells-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "grid-bento-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "header-demo": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:block"
+  },
+  "image-player-demo": {
+    "lastPublished": "2025-09-23T19:38:14.000Z",
+    "type": "registry:block"
+  },
+  "parallax-demo": {
+    "lastPublished": "2025-11-09T00:38:15.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-combo-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-inset-y-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-inset-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-radius-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-rotate-demo": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-inset-x-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-rotate-x-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-scale-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-translate-x-demo": {
+    "lastPublished": "2025-08-23T22:50:11.000Z",
+    "type": "registry:block"
+  },
+  "scroll-animation-rotate-y-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "scroll-autoplay-demo": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:block"
+  },
+  "scroll-x-carousel-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "scroll-reverse-scale-animation-demo": {
+    "lastPublished": "2025-09-23T19:05:51.000Z",
+    "type": "registry:block"
+  },
+  "scroll-x-carousel-reverse-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "slideshow-demo": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:block"
+  },
+  "story-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "team-demo": {
+    "lastPublished": "2025-09-02T23:30:43.000Z",
+    "type": "registry:block"
+  },
+  "timeline-demo": {
+    "lastPublished": "2025-11-09T00:38:15.000Z",
+    "type": "registry:block"
+  },
+  "card-curtain-reveal-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "card-flip-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "card-hover-reveal-demo": {
+    "lastPublished": "2025-06-08T00:13:58.000Z",
+    "type": "registry:ui"
+  },
+  "wavy-block-demo": {
+    "lastPublished": "2025-11-07T02:35:31.000Z",
+    "type": "registry:block"
+  },
+  "card-hover-reveal-full-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "card-testimonial-2-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "cards-stack-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "cards-stack-achievements-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "card-testimonial-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "cards-stack-rotated-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "cards-stack-rotated-recognitions-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "cards-stack-full-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:block"
+  },
+  "custom-cursor-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "custom-cursor-2-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "rating-stars-demo": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "pricing-demo": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:block"
+  },
+  "pricing-2-demo": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "product-carousel-demo": {
+    "lastPublished": "2025-11-10T00:57:04.000Z",
+    "type": "registry:block"
+  },
+  "product-carousel-2-demo": {
+    "lastPublished": "2025-11-10T00:57:04.000Z",
+    "type": "registry:block"
+  },
+  "toggle-layout-demo": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "product-carousel-3-demo": {
+    "lastPublished": "2025-11-10T15:40:38.000Z",
+    "type": "registry:block"
+  },
+  "text-scroll-read-demo": {
+    "lastPublished": "2025-11-07T02:35:31.000Z",
+    "type": "registry:ui"
+  },
+  "text-stagger-hover-demo": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "text-stagger-inview-demo": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "text-stagger-inview-waves-demo": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "text-vertical-demo": {
+    "lastPublished": "2025-06-01T00:53:22.000Z",
+    "type": "registry:ui"
+  },
+  "animation-variants-demo": {
+    "lastPublished": "2025-09-23T18:49:25.000Z",
+    "type": "registry:hook"
+  },
+  "text-wavy-demo": {
+    "lastPublished": "2025-11-07T02:35:31.000Z",
+    "type": "registry:ui"
+  },
+  "set-stagger-direction-demo": {
+    "lastPublished": "2025-09-23T18:49:25.000Z",
+    "type": "registry:hook"
+  },
+  "price": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "pricing": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "avatar": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "product-carousel": {
+    "lastPublished": "2025-11-10T15:40:38.000Z",
+    "type": "registry:block"
+  },
+  "toggle-layout": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:block"
+  },
+  "badge": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "dialog": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-area": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "input": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "select": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:ui"
+  },
+  "field": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:ui"
+  },
+  "switch": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:ui"
+  },
+  "text-flip": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "text-scroll-read": {
+    "lastPublished": "2025-11-21T22:29:59.000Z",
+    "type": "registry:ui"
+  },
+  "text-stagger-inview": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "text-vertical": {
+    "lastPublished": "2025-06-06T23:07:28.000Z",
+    "type": "registry:ui"
+  },
+  "text-stagger-hover": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "text-wavy": {
+    "lastPublished": "2025-11-07T02:35:31.000Z",
+    "type": "registry:ui"
+  },
+  "wavy-texts": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:ui"
+  },
+  "word-stagger": {
+    "lastPublished": "2025-09-23T18:49:25.000Z",
+    "type": "registry:ui"
+  },
+  "animation-variants": {
+    "lastPublished": "2025-09-23T18:49:25.000Z",
+    "type": "registry:item"
+  },
+  "set-stagger-direction": {
+    "lastPublished": "2025-11-07T00:03:18.000Z",
+    "type": "registry:lib"
+  },
+  "split-text": {
+    "lastPublished": "2025-06-02T23:35:25.000Z",
+    "type": "registry:lib"
+  },
+  "transitions": {
+    "lastPublished": "2025-08-23T19:39:06.000Z",
+    "type": "registry:item"
+  },
+  "use-follow-mouse": {
+    "lastPublished": "2025-06-23T00:30:35.000Z",
+    "type": "registry:hook"
+  },
+  "use-toggle-onscroll": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:hook"
+  },
+  "use-mobile": {
+    "lastPublished": "2025-11-20T12:57:34.000Z",
+    "type": "registry:hook"
+  }
+}

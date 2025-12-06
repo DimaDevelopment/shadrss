@@ -1,0 +1,122 @@
+{
+  "tagline": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:ui"
+  },
+  "marquee": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:ui"
+  },
+  "avatar-stack": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:ui"
+  },
+  "placeholder-logo": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:component"
+  },
+  "profile-card": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:component"
+  },
+  "page-heading": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:component"
+  },
+  "section-heading": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:component"
+  },
+  "star-rating": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:component"
+  },
+  "banner-10": {
+    "lastPublished": "2025-11-28T03:05:42.000Z",
+    "type": "registry:block"
+  },
+  "benefits-13": {
+    "lastPublished": "2025-11-28T01:44:18.000Z",
+    "type": "registry:block"
+  },
+  "contact-11": {
+    "lastPublished": "2025-11-28T06:58:56.000Z",
+    "type": "registry:block"
+  },
+  "cta-9": {
+    "lastPublished": "2025-11-28T01:44:18.000Z",
+    "type": "registry:block"
+  },
+  "faqs-4": {
+    "lastPublished": "2025-11-28T01:44:18.000Z",
+    "type": "registry:block"
+  },
+  "newsletter-signup-5": {
+    "lastPublished": "2025-11-28T06:58:56.000Z",
+    "type": "registry:block"
+  },
+  "team-6": {
+    "lastPublished": "2025-12-05T00:33:42.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-11": {
+    "lastPublished": "2025-12-05T23:26:42.000Z",
+    "type": "registry:block"
+  },
+  "footer-4": {
+    "lastPublished": "2025-11-28T04:15:12.000Z",
+    "type": "registry:block"
+  },
+  "top-navigation-5": {
+    "lastPublished": "2025-11-28T22:41:16.000Z",
+    "type": "registry:block"
+  },
+  "avatar-stack-demo": {
+    "lastPublished": "2025-12-05T00:33:42.000Z",
+    "type": "registry:example"
+  },
+  "pricing-8": {
+    "lastPublished": "2025-11-28T22:41:16.000Z",
+    "type": "registry:block"
+  },
+  "page-heading-demo": {
+    "lastPublished": "2025-12-05T00:33:42.000Z",
+    "type": "registry:example"
+  },
+  "marquee-demo": {
+    "lastPublished": "2025-11-26T03:46:54.000Z",
+    "type": "registry:example"
+  },
+  "placeholder-logo-demo": {
+    "lastPublished": "2025-11-25T08:19:12.000Z",
+    "type": "registry:example"
+  },
+  "profile-card-demo": {
+    "lastPublished": "2025-11-25T08:19:12.000Z",
+    "type": "registry:example"
+  },
+  "section-heading-demo": {
+    "lastPublished": "2025-11-25T08:19:12.000Z",
+    "type": "registry:example"
+  },
+  "use-carousel": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:hook"
+  },
+  "tagline-demo": {
+    "lastPublished": "2025-11-26T04:26:09.000Z",
+    "type": "registry:example"
+  },
+  "star-rating-demo": {
+    "lastPublished": "2025-11-25T08:19:12.000Z",
+    "type": "registry:example"
+  },
+  "use-mobile": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:hook"
+  },
+  "use-click-outside": {
+    "lastPublished": "2025-11-25T07:54:47.000Z",
+    "type": "registry:hook"
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "utils": {
+    "lastPublished": "2025-11-01T22:05:10.000Z",
+    "type": "registry:item"
+  },
+  "utils-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "accordion": {
+    "lastPublished": "2025-11-09T21:55:41.000Z",
+    "type": "registry:item"
+  },
+  "alert": {
+    "lastPublished": "2025-11-29T22:22:16.000Z",
+    "type": "registry:item"
+  },
+  "alert-dialog": {
+    "lastPublished": "2025-11-30T21:22:31.000Z",
+    "type": "registry:item"
+  },
+  "autocomplete": {
+    "lastPublished": "2025-12-03T20:47:39.000Z",
+    "type": "registry:item"
+  },
+  "avatar": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "background": {
+    "lastPublished": "2025-10-21T03:59:23.000Z",
+    "type": "registry:item"
+  },
+  "carousel": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "button": {
+    "lastPublished": "2025-11-15T06:24:44.000Z",
+    "type": "registry:item"
+  },
+  "card": {
+    "lastPublished": "2025-10-27T18:06:11.000Z",
+    "type": "registry:item"
+  },
+  "badge": {
+    "lastPublished": "2025-11-29T22:35:00.000Z",
+    "type": "registry:item"
+  },
+  "checkbox": {
+    "lastPublished": "2025-12-04T01:43:07.000Z",
+    "type": "registry:item"
+  },
+  "checkbox-group": {
+    "lastPublished": "2025-10-28T20:02:38.000Z",
+    "type": "registry:item"
+  },
+  "collapsible": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "combobox": {
+    "lastPublished": "2025-12-03T20:47:39.000Z",
+    "type": "registry:item"
+  },
+  "command": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "context-menu": {
+    "lastPublished": "2025-12-03T20:37:02.000Z",
+    "type": "registry:item"
+  },
+  "copy-button": {
+    "lastPublished": "2025-11-26T07:35:04.000Z",
+    "type": "registry:item"
+  },
+  "dialog": {
+    "lastPublished": "2025-11-11T02:49:17.000Z",
+    "type": "registry:item"
+  },
+  "dropdown-menu": {
+    "lastPublished": "2025-12-03T20:37:02.000Z",
+    "type": "registry:item"
+  },
+  "fieldset": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "form": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "field": {
+    "lastPublished": "2025-12-03T20:52:17.000Z",
+    "type": "registry:item"
+  },
+  "expandable-card": {
+    "lastPublished": "2025-10-30T23:22:54.000Z",
+    "type": "registry:item"
+  },
+  "input": {
+    "lastPublished": "2025-11-29T22:06:31.000Z",
+    "type": "registry:item"
+  },
+  "like-button": {
+    "lastPublished": "2025-11-07T03:32:36.000Z",
+    "type": "registry:item"
+  },
+  "menubar": {
+    "lastPublished": "2025-12-03T20:37:02.000Z",
+    "type": "registry:item"
+  },
+  "popover": {
+    "lastPublished": "2025-12-05T06:31:57.000Z",
+    "type": "registry:item"
+  },
+  "navigation-menu": {
+    "lastPublished": "2025-11-12T02:27:42.000Z",
+    "type": "registry:item"
+  },
+  "meter": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "radio": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "scroll-area": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "separator": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "select": {
+    "lastPublished": "2025-11-29T21:17:12.000Z",
+    "type": "registry:item"
+  },
+  "slider": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "switch": {
+    "lastPublished": "2025-10-30T20:44:44.000Z",
+    "type": "registry:item"
+  },
+  "tabs": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "table": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "toggle": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "toast": {
+    "lastPublished": "2025-11-30T20:46:17.000Z",
+    "type": "registry:item"
+  },
+  "toggle-group": {
+    "lastPublished": "2025-11-28T22:18:35.000Z",
+    "type": "registry:item"
+  },
+  "chart": {
+    "lastPublished": "2025-11-03T05:09:31.000Z",
+    "type": "registry:item"
+  },
+  "tooltip": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "progress": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "card-login": {
+    "lastPublished": "2025-11-29T22:06:31.000Z",
+    "type": "registry:item"
+  },
+  "number-field": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "card-image": {
+    "lastPublished": "2025-12-03T01:44:21.000Z",
+    "type": "registry:item"
+  },
+  "ai-chat": {
+    "lastPublished": "2025-11-07T19:34:59.000Z",
+    "type": "registry:item"
+  },
+  "card-traffic": {
+    "lastPublished": "2025-10-27T22:26:46.000Z",
+    "type": "registry:item"
+  },
+  "profile-menu": {
+    "lastPublished": "2025-12-03T02:03:53.000Z",
+    "type": "registry:item"
+  },
+  "card-history": {
+    "lastPublished": "2025-10-29T19:32:05.000Z",
+    "type": "registry:item"
+  },
+  "accordion-tailwind": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "alert-tailwind": {
+    "lastPublished": "2025-11-29T22:22:16.000Z",
+    "type": "registry:item"
+  },
+  "alert-dialog-tailwind": {
+    "lastPublished": "2025-11-30T21:22:31.000Z",
+    "type": "registry:item"
+  },
+  "avatar-tailwind": {
+    "lastPublished": "2025-11-08T08:10:56.000Z",
+    "type": "registry:item"
+  },
+  "autocomplete-tailwind": {
+    "lastPublished": "2025-12-03T20:47:39.000Z",
+    "type": "registry:item"
+  },
+  "background-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "badge-tailwind": {
+    "lastPublished": "2025-12-01T20:46:13.000Z",
+    "type": "registry:item"
+  },
+  "checkbox-tailwind": {
+    "lastPublished": "2025-12-04T01:43:07.000Z",
+    "type": "registry:item"
+  },
+  "card-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "button-tailwind": {
+    "lastPublished": "2025-11-29T22:22:16.000Z",
+    "type": "registry:item"
+  },
+  "carousel-tailwind": {
+    "lastPublished": "2025-12-01T00:46:27.000Z",
+    "type": "registry:item"
+  },
+  "checkbox-group-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "combobox-tailwind": {
+    "lastPublished": "2025-12-03T20:47:39.000Z",
+    "type": "registry:item"
+  },
+  "collapsible-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "command-tailwind": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "context-menu-tailwind": {
+    "lastPublished": "2025-12-03T20:37:02.000Z",
+    "type": "registry:item"
+  },
+  "copy-button-tailwind": {
+    "lastPublished": "2025-11-26T07:35:04.000Z",
+    "type": "registry:item"
+  },
+  "dialog-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "card-task": {
+    "lastPublished": "2025-11-29T21:49:58.000Z",
+    "type": "registry:item"
+  },
+  "fieldset-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "field-tailwind": {
+    "lastPublished": "2025-12-03T20:52:17.000Z",
+    "type": "registry:item"
+  },
+  "form-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "like-button-tailwind": {
+    "lastPublished": "2025-11-09T21:59:08.000Z",
+    "type": "registry:item"
+  },
+  "dropdown-menu-tailwind": {
+    "lastPublished": "2025-12-03T20:37:02.000Z",
+    "type": "registry:item"
+  },
+  "meter-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "menubar-tailwind": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "navigation-menu-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "input-tailwind": {
+    "lastPublished": "2025-11-29T22:06:31.000Z",
+    "type": "registry:item"
+  },
+  "number-field-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "preview-card-tailwind": {
+    "lastPublished": "2025-11-12T01:14:50.000Z",
+    "type": "registry:item"
+  },
+  "progress-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "radio-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "popover-tailwind": {
+    "lastPublished": "2025-12-05T06:31:57.000Z",
+    "type": "registry:item"
+  },
+  "separator-tailwind": {
+    "lastPublished": "2025-11-03T05:09:31.000Z",
+    "type": "registry:item"
+  },
+  "slider-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "select-tailwind": {
+    "lastPublished": "2025-11-29T21:17:12.000Z",
+    "type": "registry:item"
+  },
+  "switch-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "scroll-area-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "tabs-tailwind": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "toast-tailwind": {
+    "lastPublished": "2025-11-30T20:46:17.000Z",
+    "type": "registry:item"
+  },
+  "table-tailwind": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "toggle-group-tailwind": {
+    "lastPublished": "2025-11-28T22:18:35.000Z",
+    "type": "registry:item"
+  },
+  "toggle-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "tooltip-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "toolbar-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "chart-tailwind": {
+    "lastPublished": "2025-11-03T05:09:31.000Z",
+    "type": "registry:item"
+  },
+  "ai-chat-tailwind": {
+    "lastPublished": "2025-11-23T23:56:51.000Z",
+    "type": "registry:item"
+  },
+  "card-history-tailwind": {
+    "lastPublished": "2025-10-29T19:32:05.000Z",
+    "type": "registry:item"
+  },
+  "card-image-tailwind": {
+    "lastPublished": "2025-12-03T01:44:21.000Z",
+    "type": "registry:item"
+  },
+  "card-login-tailwind": {
+    "lastPublished": "2025-11-29T22:06:31.000Z",
+    "type": "registry:item"
+  },
+  "expandable-card-tailwind": {
+    "lastPublished": "2025-11-02T06:43:58.000Z",
+    "type": "registry:item"
+  },
+  "profile-menu-tailwind": {
+    "lastPublished": "2025-12-03T02:03:53.000Z",
+    "type": "registry:item"
+  },
+  "card-traffic-tailwind": {
+    "lastPublished": "2025-11-03T05:09:31.000Z",
+    "type": "registry:item"
+  },
+  "card-task-tailwind": {
+    "lastPublished": "2025-11-29T21:49:58.000Z",
+    "type": "registry:item"
+  }
+}

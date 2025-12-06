@@ -1,0 +1,1494 @@
+{
+  "animated-grid-pattern": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:ui"
+  },
+  "marquee": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:ui"
+  },
+  "blog-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "blog-01": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "blog-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "contact-01": {
+    "lastPublished": "2025-11-06T16:33:31.000Z",
+    "type": "registry:block"
+  },
+  "contact-02": {
+    "lastPublished": "2025-11-06T16:33:31.000Z",
+    "type": "registry:block"
+  },
+  "faq-01": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "faq-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "contact-03": {
+    "lastPublished": "2025-11-06T16:33:31.000Z",
+    "type": "registry:block"
+  },
+  "faq-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "faq-04": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "faq-05": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "faq-06": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "faq-07": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "features-01": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "features-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "features-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "features-04": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "features-05": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "features-06": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "features-07": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "footer-01": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "footer-02": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "footer-03": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "footer-04": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "footer-05": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "hero-01": {
+    "lastPublished": "2025-10-29T04:16:26.000Z",
+    "type": "registry:block"
+  },
+  "hero-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "hero-03": {
+    "lastPublished": "2025-10-29T04:16:26.000Z",
+    "type": "registry:block"
+  },
+  "hero-04": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "hero-05": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "hero-07": {
+    "lastPublished": "2025-10-29T04:16:26.000Z",
+    "type": "registry:block"
+  },
+  "hero-06": {
+    "lastPublished": "2025-10-29T04:16:26.000Z",
+    "type": "registry:block"
+  },
+  "login-01": {
+    "lastPublished": "2025-11-06T16:00:06.000Z",
+    "type": "registry:block"
+  },
+  "login-02": {
+    "lastPublished": "2025-11-06T16:00:06.000Z",
+    "type": "registry:block"
+  },
+  "login-03": {
+    "lastPublished": "2025-11-06T16:00:06.000Z",
+    "type": "registry:block"
+  },
+  "login-04": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "login-05": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-01": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-02": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-05": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-04": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-06": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "logo-cloud-07": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "pricing-01": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "navbar-05": {
+    "lastPublished": "2025-11-05T16:43:09.000Z",
+    "type": "registry:block"
+  },
+  "pricing-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "navbar-01": {
+    "lastPublished": "2025-12-03T15:14:26.000Z",
+    "type": "registry:block"
+  },
+  "pricing-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "navbar-02": {
+    "lastPublished": "2025-12-03T15:14:26.000Z",
+    "type": "registry:block"
+  },
+  "navbar-04": {
+    "lastPublished": "2025-12-03T15:14:26.000Z",
+    "type": "registry:block"
+  },
+  "pricing-05": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "pricing-06": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "pricing-04": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "navbar-03": {
+    "lastPublished": "2025-11-05T16:43:09.000Z",
+    "type": "registry:block"
+  },
+  "stats-01": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "signup-01": {
+    "lastPublished": "2025-11-06T16:00:06.000Z",
+    "type": "registry:block"
+  },
+  "signup-02": {
+    "lastPublished": "2025-11-06T16:00:06.000Z",
+    "type": "registry:block"
+  },
+  "signup-03": {
+    "lastPublished": "2025-11-06T16:00:06.000Z",
+    "type": "registry:block"
+  },
+  "signup-04": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "signup-05": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "team-01": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "stats-02": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "team-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "team-04": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-01": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "team-05": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "team-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-04": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "timeline-02": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-05": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "testimonials-06": {
+    "lastPublished": "2025-10-29T14:15:35.000Z",
+    "type": "registry:block"
+  },
+  "timeline-03": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "timeline-01": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "timeline-04": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "timeline-05": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "timeline-06": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "timeline-07": {
+    "lastPublished": "2025-11-22T08:47:21.000Z",
+    "type": "registry:block"
+  },
+  "accordion-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "accordion-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "avatar-13": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-13": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "badge-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-17": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-22": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-19": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-18": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-20": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-14": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-15": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-16": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-13": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-23": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "button-21": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "card-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-03": {
+    "lastPublished": "2025-09-07T09:20:47.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-09": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-11": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "checkbox-10": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-13": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-14": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-15": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "carousel-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "collapsible-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "collapsible-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "collapsible-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "collapsible-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "input-otp-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-13": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-14": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "pagination-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "progress-06": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-07": {
+    "lastPublished": "2025-09-07T09:20:47.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-08": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "radio-group-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "select-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "separator-with-label-vertical": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-04": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "slider-03": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "slider-05": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "slider-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-13": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "slider-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-07": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "slider-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "slider-14": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "slider-15": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "spinner-01": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-02": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-03": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-04": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-07": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-06": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-08": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-09": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-05": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-10": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "spinner-11": {
+    "lastPublished": "2025-03-22T18:42:19.000Z",
+    "type": "registry:component"
+  },
+  "switch-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "switch-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "switch-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "switch-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "switch-05": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "switch-07": {
+    "lastPublished": "2025-09-06T14:44:53.000Z",
+    "type": "registry:component"
+  },
+  "switch-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "table-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-08": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-09": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-10": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-12": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-11": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-13": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-14": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-15": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-17": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-16": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tabs-18": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-01": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "textarea-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-02": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-03": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-07": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-05": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-04": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  },
+  "tooltip-06": {
+    "lastPublished": "2025-11-21T15:02:56.000Z",
+    "type": "registry:component"
+  }
+}
