@@ -1,0 +1,16 @@
+{
+  "name": "@shadcnrss/gh",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "octokit": "^5.0.5"
+  }
+}

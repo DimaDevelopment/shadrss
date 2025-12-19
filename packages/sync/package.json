@@ -1,0 +1,19 @@
+{
+  "name": "@shadcnrss/sync",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsx ./src/index.ts"
+  },
+  "dependencies": {
+    "@shadcnrss/gh": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
+}
