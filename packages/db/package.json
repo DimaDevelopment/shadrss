@@ -8,8 +8,8 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "bunx prisma generate",
+    "db:migrate": "bunx prisma migrate dev",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio"
   },
@@ -18,9 +18,12 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "@types/node": "^25.0.3",
+    "@types/pg": "^8.16.0",
     "dotenv": "^17.2.3",
-    "drizzle-kit": "^0.31.8",
-    "drizzle-orm": "^0.45.1",
-    "octokit": "^5.0.5"
+    "pg": "^8.16.3",
+    "prisma": "^7.2.0"
   }
 }

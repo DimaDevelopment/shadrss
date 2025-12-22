@@ -4,16 +4,18 @@
   "private": true,
   "license": "MIT",
   "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "dev": "tsx ./src/index.ts"
-  },
   "dependencies": {
-    "@shadcnrss/gh": "*"
-  },
-  "devDependencies": {
-    "tsx": "^4.21.0"
+    "@shadcnrss/db": "*",
+    "@shadcnrss/gh": "*",
+    "@shadcnrss/logger": "*",
+    "@shadcnrss/tui": "*",
+    "@shadcnrss/typescript-config": "*",
+    "zod": "^4.2.1"
   }
 }

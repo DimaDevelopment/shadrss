@@ -1,0 +1,17 @@
+{
+  "name": "@shadcnrss/logger",
+  "description": "logger utility for shadcnrss",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "@shadcnrss/eslint-config": "*",
+    "@shadcnrss/typescript-config": "*",
+    "@types/node": "^22.15.3"
+  },
+  "dependencies": {
+    "kleur": "^4.1.5"
+  }
+}

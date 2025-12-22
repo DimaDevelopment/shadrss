@@ -6,6 +6,9 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@shadcnrss/sync": "*",
+    "@shadcnrss/db": "*",
+    "@shadcnrss/typescript-config": "*",
     "elysia": "latest"
   },
   "devDependencies": {

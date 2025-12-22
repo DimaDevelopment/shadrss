@@ -1,0 +1,17 @@
+{
+  "name": "@shadcnrss/tui",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@shadcnrss/eslint-config": "*",
+    "@shadcnrss/typescript-config": "*",
+    "@types/node": "^22.15.3",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "ora": "^9.0.0"
+  }
+}

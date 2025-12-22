@@ -1,0 +1,4 @@
+{
+  "extends": "@shadcnrss/typescript-config/base.json",
+  "compilerOptions": {}
+}

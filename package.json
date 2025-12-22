@@ -2,8 +2,10 @@
   "name": "shadcnrss_v2",
   "private": true,
   "scripts": {
+    "db:generate": "bun run --filter @shadcnrss/db db:generate",
+    "db:migrate": "bun run --filter @shadcnrss/db db:migrate",
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "NODE_ENV=development turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"

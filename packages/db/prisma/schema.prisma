@@ -1,0 +1,117 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Registry {
+  id          Int     @id @default(autoincrement())
+  name        String? @unique
+  description String?
+  homepage    String?
+  url         String?
+  repo        String?
+
+  items RegistryItem[]
+  repos RegistryRepo[]
+
+  @@map("registries")
+}
+
+model RegistryItem {
+  id           Int           @id @default(autoincrement())
+  registryId   Int?          @map("registry_id")
+  name         String
+  title        String?
+  description  String?
+  registryDeps String?       @map("registry_deps")
+  deps         String?
+  type         String? 
+
+  registry Registry? @relation(fields: [registryId], references: [id])
+  files    RegistryItemFile[]
+  states   RegistryItemState[]
+  diffs    RegistryItemDiff[]
+
+  @@unique([registryId, name])
+  @@map("registries_items")
+}
+
+model RegistryItemFile {
+  id      Int           @id @default(autoincrement())
+  itemId  Int?          @map("item_id")
+  path    String?
+  content String?
+  type    String? 
+
+  item RegistryItem? @relation(fields: [itemId], references: [id])
+
+  @@map("registries_items_files")
+}
+
+model RegistryRepo {
+  id         Int     @id @default(autoincrement())
+  registryId Int?    @map("registry_id") @unique
+  repoId     Int?   @map("repo_id")
+  url        String?
+  owner      String?
+  name       String? @map("repo")
+  stars      Int?
+  forks      Int?
+  issues     Int?
+  watchers   Int?
+  openIssues Int?   @map("open_issues")
+  archived   Boolean?
+
+  repoCreatedAt DateTime? @map("repo_created_at")
+  repoUpdatedAt DateTime? @map("repo_updated_at")
+  repoPushedAt  DateTime? @map("repo_pushed_at")
+
+  license     String?
+
+  registry Registry? @relation(fields: [registryId], references: [id])
+
+  @@map("registries_repos")
+}
+
+model RegistryItemState {
+  id              Int      @id @default(autoincrement())
+  itemId          Int?     @map("item_id")
+  updated         Boolean?
+  created         Boolean?
+  breakingChanges Boolean? @map("breaking_changes")
+
+  item RegistryItem? @relation(fields: [itemId], references: [id])
+
+  @@map("registry_item_states")
+}
+
+model RegistryItemDiff {
+  id     Int     @id @default(autoincrement())
+  itemId Int?    @map("item_id")
+  content String?
+
+  item RegistryItem? @relation(fields: [itemId], references: [id])
+
+  @@map("registry_item_diffs")
+}
+
+model InvalidRegistry {
+  id  Int    @id @default(autoincrement())
+  name        String? @unique
+  description String?
+  homepage    String?
+  url         String?
+  repo        String?
+
+  @@map("invalid_registries")
+}
