@@ -1,3 +1,16 @@
+## 🚨 Announcing `shadcn/scout` (coming soon)
+
+`shadcn/rss` is evolving. Meet **shadcn/scout** — a new workflow that helps you keep components from multiple shadcn registries **up to date without losing your local tweaks**.
+
+### What Scout will bring
+
+- **Auto-tracking for all trusted registries** from `shadcn/directory` (no RSS setup, tokens, or manual links)
+- **Commit-level diffs** so you can see exactly what changed in component files
+- **MCP tools** for IDE agents to upgrade components safely (e.g. `scout check button`)
+- **GitHub automation**: connect your repo → updates → automatic PRs to review & merge
+
+🚧 Still building in public. Want early access? Join the waitlist: https://scoutcn.dev/
+
 # shadcn/rss
 
 An application that allows you to track changes in your favorite registries. Every new component or change to existing ones will be displayed here!
