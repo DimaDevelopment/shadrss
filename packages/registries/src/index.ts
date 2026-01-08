@@ -33,7 +33,7 @@ export const getRegistries = async ({
 > => {
   const result = await withCursorPagination(() =>
     prisma.registry.findMany({
-      take: 2,
+      take: 50,
       cursor: cursor ? { id: cursor } : undefined,
       include: {
         repos: true,

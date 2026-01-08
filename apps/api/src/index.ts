@@ -1,6 +1,6 @@
 import { Elysia } from "elysia";
 
-import { syncRegistry, updateRegistriesState } from "@shadcnrss/sync";
+import { syncRegistry, updateRegistriesState, getDiff } from "@shadcnrss/sync";
 import { getRegistries } from "@shadcnrss/registries";
 
 import { checkRateLimit } from "../../../packages/sync/src/github";
@@ -35,6 +35,9 @@ const app = new Elysia()
       console.error("Error starting update:", e);
       return "Error starting update";
     }
+  })
+  .get("/diff", async () => {
+    await getDiff();
   })
   .get("/health", async () => {
     const rateLimit = await checkRateLimit();

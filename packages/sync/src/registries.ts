@@ -32,7 +32,7 @@ const toRegistryInsertValues = (item: Registry) => {
   };
 };
 
-const onRegistriesFetched = async (registry: Registry) => {
+const fetchRegistry = async (registry: Registry) => {
   const result = await prisma.registry.upsert({
     where: { name: registry.name },
     create: toRegistryInsertValues(registry),
@@ -55,7 +55,7 @@ const onRegistriesFetched = async (registry: Registry) => {
   return result;
 };
 
-const onRegistryItemsFetched = (registryId: number, items: RegistryItem[]) => {
+const syncRegistryItems = (registryId: number, items: RegistryItem[]) => {
   if (!items.length) return;
 
   return Promise.all(
@@ -163,14 +163,14 @@ export async function syncRegistry() {
       continue;
     }
 
-    const savedRegistry = await onRegistriesFetched(registry);
+    const savedRegistry = await fetchRegistry(registry);
     spinner.step(`Fetched registry: ${registry.name}`);
 
     const items = await fetchRegistryItems(registry);
 
     if (!savedRegistry) continue;
 
-    onRegistryItemsFetched(savedRegistry.id, items);
+    syncRegistryItems(savedRegistry.id, items);
 
     spinner.step(`Synced ${items.length} items for registry: ${registry.name}`);
   }

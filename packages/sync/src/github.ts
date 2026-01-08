@@ -114,3 +114,25 @@ export const checkRateLimit = async () => {
     resetAt: new Date(rateLimit.data.rate.reset * 1000),
   };
 };
+
+export const getDiff = async () => {
+  console.log("Fetching diff between two commits...");
+  const diff = await gh.rest.repos.compareCommitsWithBasehead({
+    basehead: "dc2d883b63813368adb28dead747c684e1a77701...main",
+    owner: "TheOrcDev",
+    repo: "8bitcn-ui",
+  });
+
+  // console.log(diff.data);
+
+  const diffUrl = diff.data.diff_url;
+
+  const diffResponse = await fetch(diffUrl!, {
+    headers: {
+      Accept: "application/vnd.github.v3.diff",
+    },
+  });
+  const diffText = await diffResponse.text();
+
+  console.log(diffText);
+};

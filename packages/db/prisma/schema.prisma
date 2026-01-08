@@ -129,7 +129,7 @@ model RegistryItemCommits {
   url       String?
   date   DateTime?
 
-  item RegistryItem? @relation(fields: [itemId], references: [id])
+  items RegistryItem[]? @relation(fields: [itemId], references: [id])
 
   @@map("registry_item_commits")
 }
